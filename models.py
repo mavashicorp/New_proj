@@ -1,4 +1,3 @@
-# models.py
 from pydantic import BaseModel
 from sqlalchemy import Table, Column, Integer, String
 from database import metadata
@@ -13,5 +12,5 @@ users = Table(
 
 class UserOut(BaseModel):
     id: int
-    name: str
+    user_name: str
     email: str
