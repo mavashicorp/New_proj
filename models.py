@@ -10,7 +10,4 @@ users = Table(
     Column("email", String(100)),
 )
 
-class UserOut(BaseModel):
-    id: int
-    user_name: str
-    email: str
+
